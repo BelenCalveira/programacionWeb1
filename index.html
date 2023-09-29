@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>¿Que es HTML?</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/portada.jpeg" width=100% alt="imagen html" id="inicio"/>
+            <h1>Esta página esta ideada para probar que sabes lo básico de HTML</h1>
+        </header>
+        
+        <nav>
+            <ul id="menu">
+                <li><a href="#inicio">inicio</a></li>
+                <li><input type="checkbox" name="preguntas" id="preg"><label for="preg">Preguntas</label>
+                    <ul class="interior">
+                        <li><a href="#preg1">preg 1</a></li>
+                        <li><a href="#preg2">preg 2</a></li>
+                        <li><a href="#preg3">preg 3</a></li>
+                        <li><a href="#preg4">preg 4</a></li>
+                        <li><a href="#preg5">preg 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tablaDePuntos">tabla de puntos</a></li>
+                <li><a href="#enviaPuntaje">envia tu puntaje</a></li>
+            </ul>
+        </nav>
+
+        <section id="nivelCompl">
+            <h1>Complejidad</h1>
+            <input type="search" name="complejidad" list="nivel" />
+            <datalist id="nivel">
+                <option value="basico">
+                <option value="intermedio">
+                <option value="avanzado">
+            </datalist>    
+        </section>
+
+        <section id="preguntas">
+
+            <header id="preg1">
+                <h1>¿Cual es la estructura básica de HTML?</h1>
+            </header>
+            <article>
+                <ul>
+                    <li><input type="radio" id="html1" name="html"/>
+                        <label for="html1"><img src="img/html 1.jpg" alt="html head meta title head body h1 body html"/></label></li>
+                    <li><input type="radio" id="html2" name="html" alt="html head title h1 head html"/>
+                        <label for="html1"><img src="img/html 2.jpg"/></label></li>
+                    <li><input type="radio" id="html3" name="html"/>
+                        <label for="html1"><img src="img/html 3.jpg" alt="html head body title h1 body head html"/></label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <header id="preg2">
+                <h1>¿A que hace referencia la siguiente imágen?</h1>
+                <img src="img/h1.jpg" alt="h1 titulo h1"/>
+            </header>
+            <article>
+                <ul>
+                    <li><input type="radio" id="atributo" name="pregunta2"/>
+                        <label for="atributo">Atributo</label></li>
+                    <li><input type="radio" id="etiqueta" name="pregunta2"/>
+                        <label for="etiqueta">Etiqueta</label></li>
+                    <li><input type="radio" id="elemento" name="pregunta2"/>
+                        <label for="elemento">Elemento</label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <header id="preg3">
+                <h1>¿Que son las etiquetas?</h1>
+            </header>
+            <article>
+                <ul>
+                    <li><input type="radio" id="etiq1" name="etiq"/>
+                        <label for="html1"><img src="img/etiqueta 1.jpg" alt="son codigos utilizados para 'marcar'"/></label></li>
+                    <li><input type="radio" id="etiq2" name="etiq" alt="html head title h1 head html"/>
+                        <label for="html1"><img src="img/etiqueta 3.jpg" alt="es un conjunto completo de etiquetas y contenidos"/></label></li>
+                    <li><input type="radio" id="etiq3" name="etiq"/>
+                        <label for="html1"><img src="img/etiqueta 2.jpg" alt="proporcionan informacion adicional a los elementos html"/></label></li>
+                </ul>
+            </article>   
+            
+            <hr>
+
+            <header id="preg4">
+                <h1>¿A que se refiere la siguiente imagen?</h1>
+                <img src="img/src.jpg" alt="src='img/corazon.jpg'"/>
+            </header>
+            <article>
+                <ul>
+                    <li><input type="radio" id="etiqueta1" name="pregunta3"/>
+                        <label for="etiqueta">Etiqueta</label></li>
+                    <li><input type="radio" id="elemento1" name="pregunta3"/>
+                        <label for="elemento">Elemento</label></li>
+                    <li><input type="radio" id="atributo1" name="pregunta3"/>
+                        <label for="atributo">Atributo</label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <header id="preg5">
+                <h1>Verdadero o Falso</h1>
+            </header>
+            <article>
+                <table>
+                    <caption>Responde a cada una de las siguientes lineas por V o F</caption>
+                    <thead>
+                        <tr>
+                            <th>partes de HTML</th>
+                            <th>justificación</th>
+                            <th>V</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><img src="img/tabla1.jpg" alt="html html"/></th>
+                            <td>Es el encabezado de la página</td>
+                            <td><input type="radio" id="htmlv" name="tabla1"></td>
+                            <td><input type="radio" id="htmlf" name="tabla1"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla2.jpg" alt="caption caption"/></th>
+                            <td>Es una etiqueta</td>
+                            <td><input type="radio" id="captionv" name="tabla2"></td>
+                            <td><input type="radio" id="captionf" name="tabla2"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla3.jpg" alt="footer footer"/></th>
+                            <td>Es el pie de página</td>
+                            <td><input type="radio" id="footerv" name="tabla3"></td>
+                            <td><input type="radio" id="footerf" name="tabla3"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla4.jpg" alt="<!---->"/></th>
+                            <td>Son las etiquetas para iniciar comentarios</td>
+                            <td><input type="radio" id="comentv" name="tabla4"></td>
+                            <td><input type="radio" id="comentf" name="tabla4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="tablaDePuntos">
+            <table>
+                <thead>
+                        <caption>Tabla de puntos</caption>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>bel</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>cin</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>ric</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>ser</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </section>
+
+        <hr>
+
+        <section id="enviaPuntaje">
+            <header>
+                <h1>Enviar puntaje</h1>
+            </header>
+            <input type="text" name="nombre" minlenght= "3" maxlength="3" placeholder="Nombre" required/>
+            <br>
+            <input type="text" name="puntaje" value="puntaje" readonly />
+            <br>
+            <input type="submit" value="Enviar" />  
+        </section> 
+
+        <footer id="piePagina">
+            <h2>Esta página fue creada con fines evaluatorios, para la materia "Programación Web 1"</h2>
+            <h3>Las referencias para corroborar lo que se evalúa de HTML, están en la siguiente <a href="https://github.com/ppandomail/pweb/blob/main/doc/html5.md" target="_blank">página</a></h3>
+        </footer>
+    </body>
+</html>
