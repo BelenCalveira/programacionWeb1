@@ -5,7 +5,6 @@ body{
 }
 header h1{
     text-align: center;
-    margin: 1%;
 }
 nav{
     display:flex;
@@ -63,7 +62,7 @@ ul, ul li {
     max-width: min-content;
 }
 
-section h1, img{
+section h1, section img{
     display: flex;
     margin-left: 5%;
 }
