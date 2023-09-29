@@ -1,0 +1,96 @@
+body{
+    background-color: bisque;
+    margin: 0%;
+    padding: 0%;
+}
+header h1{
+    text-align: center;
+    margin: 1%;
+}
+nav{
+    display:flex;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+ul, ul li {
+    list-style: none;
+    
+}
+
+#menu li a{
+    color:#222; 
+    text-decoration:none;    
+}
+
+#menu li a:hover{
+    background-color:beige;
+    display: block;
+}
+
+#menu > li{
+    line-height:180%;
+    float: left;
+}
+
+#menu li a:before{ 
+    content:"\025b8"; 
+    color:#ddd; 
+    margin-right:4px;
+}
+
+#menu input[name="preguntas"] {
+	position: absolute;
+	left: -1000em;
+}
+
+#menu label:before{ 
+    content:"\025b8"; 
+    margin-right:4px;
+}
+
+#menu .interior{
+    display: none;
+}
+
+#menu input:checked ~ ul{
+    display:block;
+    position: relative;
+}
+
+#nivelCompl {
+    float: right;
+    max-width: min-content;
+}
+
+section h1, img{
+    display: flex;
+    margin-left: 5%;
+}
+
+table{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+thead{
+    background-color:antiquewhite;
+}
+tbody th{
+    background-color: antiquewhite;
+    width: 200px;
+    
+}
+td{
+    border: 1px solid seashell;
+}
+#tablaDePuntos{
+    display:inline-flex;
+    padding-left: 5%;
+}
+#enviaPuntaje{
+    padding-left: 5%;
+}
+#piePagina{
+    text-align: center;
+}
