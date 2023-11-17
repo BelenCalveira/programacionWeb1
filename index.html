@@ -9,27 +9,21 @@
 </head>
 
 <body onload="validarComplejidad()">
-    <header>
-        <img src="img/portada.jpeg" width=100% alt="imagen html" id="inicio" />
-        <h1>¿Cuánto sabes de HTML?</h1>
-    </header>
+
 
     <nav>
         <ul id="menu">
             <li><a href="#inicio">inicio</a></li>
-            <li><input type="checkbox" name="preguntas" id="preg"><label for="preg">Preguntas</label>
-                <ul class="interior">
-                    <li><a href="#preg1">preg 1</a></li>
-                    <li><a href="#preg2">preg 2</a></li>
-                    <li><a href="#preg3">preg 3</a></li>
-                    <li><a href="#preg4">preg 4</a></li>
-                    <li><a href="#preg5">preg 5</a></li>
-                </ul>
-            </li>
+            <li><a href="#pr">Preguntas</a></li>
             <li><a href="#tablaDePuntos">tabla de puntos</a></li>
             <li><a href="#enviaPuntaje">envia tu puntaje</a></li>
         </ul>
     </nav>
+
+    <header>
+        <img src="img/portada.jpeg" width=100% alt="imagen html" id="inicio" />
+        <h1>¿Cuánto sabes de HTML?</h1>
+    </header>
 
     <section id="nivelCompl">
         <h2>Complejidad</h2>
@@ -47,361 +41,372 @@
         </form>
     </section>
 
-    <section class="preguntas" id="basico" name="prgnts">
+    <section id="pr">
+        <section class="preguntas" id="basico" name="prgnts">
 
-        <article id="preg1b">
-            <header>
-                <p>¿Cual es la estructura básica de HTML?</p>
-                <p>basico</p>
-            </header>
-            <ul>
-                <li><input type="radio" id="html1b" name="html" />
-                    <label for="html1b"><img src="img/html 1.jpg" alt="html head meta title head body h1 body html"/></label></li>
-                <li><input type="radio" id="html2b" name="html" />
-                    <label for="html2b"><img src="img/html 6.jpg" alt="html cabeza cabeza cuerpo cuerpo html"/></label></li>
-                <li><input type="radio" id="html3b" name="html" />
-                    <label for="html3b"><img src="img/html 5.jpg" alt="html cabeza cabeza body body html"/></label></li>
-            </ul>
-        </article>
+            <article id="preg1b">
+                <header>
+                    <p>¿Cual es la estructura básica de HTML?</p>
+                </header>
+                <ul>
+                    <li><input type="radio" id="b1a" name="html" />
+                        <label for="b1a"><img src="img/html 1.jpg" alt="html head meta title head body h1 body html"/></label></li>
+                    <li><input type="radio" id="b1b" name="html" />
+                        <label for="b1b"><img src="img/html 6.jpg" alt="html cabeza cabeza cuerpo cuerpo html"/></label></li>
+                    <li><input type="radio" id="b1c" name="html" />
+                        <label for="b1c"><img src="img/html 5.jpg" alt="html cabeza cabeza body body html"/></label></li>
+                </ul>
+            </article>
 
-        <hr>
-
-
-        <article id="preg2b">
-            <header>
-                <p>¿A que hace referencia la siguiente imágen?</p>
-                <img src="img/h1.jpg" alt="h1 titulo h1" />
-            </header>
-            <ul>
-                <li><input type="radio" id="tributo" name="pregunta2" />
-                    <label for="tributo">Tributo</label></li>
-                <li><input type="radio" id="etiqueta" name="pregunta2" />
-                    <label for="etiqueta">Etiqueta</label></li>
-                <li><input type="radio" id="sticker" name="pregunta2" />
-                    <label for="sticker">Sticker</label></li>
-            </ul>
-        </article>
-
-        <hr>
+            <hr>
 
 
-        <article id="preg3b">
-            <header>
-                <p>¿Que son las etiquetas?</p>
-            </header>
-            <ul>
-                <li><input type="radio" id="etiq1b" name="etiq" />
-                    <label for="etiq1b"><img src="img/etiqueta 1.jpg" alt="son codigos utilizados para 'marcar'"/></label></li>
-                <li><input type="radio" id="etiq2b" name="etiq" alt="html head title h1 head html" />
-                    <label for="etiq2b"><img src="img/etiqueta 4.jpg" alt="facilitan informacion acerca de productos"/></label></li>
-                <li><input type="radio" id="etiq3b" name="etiq" />
-                    <label for="etiq3b"><img src="img/etiqueta 5.jpg" alt="se coloca en un objeto para identificar"/></label></li>
-            </ul>
-        </article>
+            <article id="preg2b">
+                <header>
+                    <p>¿A que hace referencia la siguiente imágen?</p>
+                    <img src="img/h1.jpg" alt="h1 titulo h1" />
+                </header>
+                <ul>
+                    <li><input type="radio" id="b2a" name="pregunta2" />
+                        <label for="b2a">Tributo</label></li>
+                    <li><input type="radio" id="b2b" name="pregunta2" />
+                        <label for="b2b">Etiqueta</label></li>
+                    <li><input type="radio" id="b2c" name="pregunta2" />
+                        <label for="b2c">Sticker</label></li>
+                </ul>
+            </article>
 
-        <hr>
-
-
-        <article id="preg4b">
-            <header>
-                <p>¿A que hace referencia la siguiente imagen?</p>
-                <img src="img/src.jpg" alt="src='img/corazon.jpg'" />
-            </header>
-            <ul>
-                <li><input type="radio" id="valor" name="pregunta3" />
-                    <label for="valor">Valor</label></li>
-                <li><input type="radio" id="elementob" name="pregunta3" />
-                    <label for="elementob">Element</label></li>
-                <li><input type="radio" id="atributob" name="pregunta3" />
-                    <label for="atributob">Atributo</label></li>
-            </ul>
-        </article>
-
-        <hr>
+            <hr>
 
 
-        <article id="preg5b">
-            <header>
-                <p>Verdadero o Falso</p>
-            </header>
-            <table>
-                <caption>Responde a cada una de las siguientes lineas por V o F</caption>
-                <thead>
-                    <tr>
-                        <th>partes de HTML</th>
-                        <th>justificación</th>
-                        <th>V</th>
-                        <th>F</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th><img src="img/tabla1.jpg" alt="html html" /></th>
-                        <td>Es el cerebro de la página</td>
-                        <td><input type="radio" id="htmlvb" name="tabla1"></td>
-                        <td><input type="radio" id="htmlfb" name="tabla1"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla2.jpg" alt="caption caption" /></th>
-                        <td>Es una etiqueta</td>
-                        <td><input type="radio" id="captionvb" name="tabla2"></td>
-                        <td><input type="radio" id="captionfb" name="tabla2"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla3.jpg" alt="footer footer" /></th>
-                        <td>Es el pie de página</td>
-                        <td><input type="radio" id="footervb" name="tabla3"></td>
-                        <td><input type="radio" id="footerfb" name="tabla3"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla4.jpg" alt="<!---->" /></th>
-                        <td>Son las etiquetas para iniciar comentarios</td>
-                        <td><input type="radio" id="comentvb" name="tabla4"></td>
-                        <td><input type="radio" id="comentfb" name="tabla4"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-    </section>
+            <article id="preg3b">
+                <header>
+                    <p>¿Que son las etiquetas?</p>
+                </header>
+                <ul>
+                    <li><input type="radio" id="b3a" name="etiq" />
+                        <label for="b3a"><img src="img/etiqueta 1.jpg" alt="son codigos utilizados para 'marcar'"/></label></li>
+                    <li><input type="radio" id="b3b" name="etiq" alt="html head title h1 head html" />
+                        <label for="b3b"><img src="img/etiqueta 4.jpg" alt="facilitan informacion acerca de productos"/></label></li>
+                    <li><input type="radio" id="b3c" name="etiq" />
+                        <label for="b3c"><img src="img/etiqueta 5.jpg" alt="se coloca en un objeto para identificar"/></label></li>
+                </ul>
+            </article>
 
-    <section class="preguntas" id="intermedio" name="prgnts">
-
-        <article id="preg1i">
-            <header>
-                <p>¿Cual es la estructura básica de HTML?</p>
-                <p>intermedio</p>
-            </header>
-            <ul>
-                <li><input type="radio" id="html1i" name="html" />
-                    <label for="html1i"><img src="img/html 2.jpg" alt="html head meta title head body h1 body html"/></label></li>
-                <li><input type="radio" id="html2i" name="html" alt="html head title h1 head html" />
-                    <label for="html2i"><img src="img/html 1.jpg"/></label></li>
-                <li><input type="radio" id="html3i" name="html" />
-                    <label for="html3i"><img src="img/html 3.jpg" alt="html head body title h1 body head html"/></label></li>
-            </ul>
-        </article>
-
-        <hr>
+            <hr>
 
 
-        <article id="preg2i">
-            <header>
-                <p>¿A que hace referencia la siguiente imágen?</p>
-                <img src="img/h1.jpg" alt="h1 titulo h1" />
-            </header>
-            <ul>
-                <li><input type="radio" id="atributoi" name="pregunta2" />
-                    <label for="atributoi">Value</label></li>
-                <li><input type="radio" id="etiquetai" name="pregunta2" />
-                    <label for="etiquetai">Etiqueta</label></li>
-                <li><input type="radio" id="elementoi" name="pregunta2" />
-                    <label for="elementoi">Elemento</label></li>
-            </ul>
-        </article>
+            <article id="preg4b">
+                <header>
+                    <p>¿A que hace referencia la siguiente imagen?</p>
+                    <img src="img/src.jpg" alt="src='img/corazon.jpg'" />
+                </header>
+                <ul>
+                    <li><input type="radio" id="b4a" name="pregunta3" />
+                        <label for="b4a">Valor</label></li>
+                    <li><input type="radio" id="b4b" name="pregunta3" />
+                        <label for="b4b">Element</label></li>
+                    <li><input type="radio" id="b4c" name="pregunta3" />
+                        <label for="b4c">Atributo</label></li>
+                </ul>
+            </article>
 
-        <hr>
-
-
-        <article id="preg3i">
-            <header>
-                <p>¿Que son las etiquetas?</p>
-            </header>
-            <ul>
-                <li><input type="radio" id="etiq1i" name="etiq" />
-                    <label for="etiq1i"><img src="img/etiqueta 3.jpg" alt="son codigos utilizados para 'marcar'"/></label></li>
-                <li><input type="radio" id="etiq2i" name="etiq" alt="html head title h1 head html" />
-                    <label for="etiq2i"><img src="img/etiqueta 1.jpg" alt="es un conjunto completo de etiquetas y contenidos"/></label></li>
-                <li><input type="radio" id="etiq3i" name="etiq" />
-                    <label for="etiq3i"><img src="img/etiqueta 4.jpg" alt="proporcionan informacion adicional a los elementos html"/></label></li>
-            </ul>
-        </article>
-
-        <hr>
+            <hr>
 
 
-        <article id="preg4i">
-            <header>
-                <p>¿A que hace referencia la siguiente imagen?</p>
-                <img src="img/src.jpg" alt="src='img/corazon.jpg'" />
-            </header>
-            <ul>
-                <li><input type="radio" id="etiqueta1" name="pregunta3" />
-                    <label for="etiqueta">Etiqueta</label></li>
-                <li><input type="radio" id="elemento1" name="pregunta3" />
-                    <label for="elemento">Element</label></li>
-                <li><input type="radio" id="atributo1" name="pregunta3" />
-                    <label for="atributo">Atributo</label></li>
-            </ul>
-        </article>
+            <article id="preg5b">
+                <header>
+                    <p>Verdadero o Falso</p>
+                </header>
+                <table>
+                    <caption>Responde a cada una de las siguientes lineas por V o F</caption>
+                    <thead>
+                        <tr>
+                            <th>partes de HTML</th>
+                            <th>justificación</th>
+                            <th>V</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><img src="img/tabla1.jpg" alt="html html" /></th>
+                            <td>Es el cerebro de la página</td>
+                            <td><input type="radio" id="b5av" name="tabla1"></td>
+                            <td><input type="radio" id="b5af" name="tabla1"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla2.jpg" alt="caption caption" /></th>
+                            <td>Es una etiqueta</td>
+                            <td><input type="radio" id="b5bv" name="tabla2"></td>
+                            <td><input type="radio" id="b5bf" name="tabla2"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla3.jpg" alt="footer footer" /></th>
+                            <td>Es el pie de página</td>
+                            <td><input type="radio" id="b5cv" name="tabla3"></td>
+                            <td><input type="radio" id="b5cf" name="tabla3"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla4.jpg" alt="<!---->" /></th>
+                            <td>Son las etiquetas para iniciar comentarios</td>
+                            <td><input type="radio" id="b5dv" name="tabla4"></td>
+                            <td><input type="radio" id="b5df" name="tabla4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
 
-        <hr>
+        <section class="preguntas" id="intermedio" name="prgnts">
 
+            <article id="preg1i">
+                <header>
+                    <p>¿Cual es la estructura básica de HTML?</p>
+                </header>
+                <ul>
+                    <li><input type="radio" id="i1a" name="html" />
+                        <label for="i1a"><img src="img/html 2.jpg" alt="html head meta title head body h1 body html"/></label></li>
+                    <li><input type="radio" id="i1b" name="html" alt="html head title h1 head html" />
+                        <label for="i1b"><img src="img/html 1.jpg"/></label></li>
+                    <li><input type="radio" id="i1c" name="html" />
+                        <label for="i1c"><img src="img/html 3.jpg" alt="html head body title h1 body head html"/></label></li>
+                </ul>
+            </article>
 
-        <article id="preg5i">
-            <header>
-                <p>Verdadero o Falso</p>
-            </header>
-            <table>
-                <caption>Responde a cada una de las siguientes lineas por V o F</caption>
-                <thead>
-                    <tr>
-                        <th>partes de HTML</th>
-                        <th>justificación</th>
-                        <th>V</th>
-                        <th>F</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th><img src="img/tabla1.jpg" alt="html html" /></th>
-                        <td>Es el encabezado de la página</td>
-                        <td><input type="radio" id="htmlvi" name="tabla1"></td>
-                        <td><input type="radio" id="htmlfi" name="tabla1"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla2.jpg" alt="caption caption" /></th>
-                        <td>Es una etiqueta</td>
-                        <td><input type="radio" id="captionvi" name="tabla2"></td>
-                        <td><input type="radio" id="captionfi" name="tabla2"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla3.jpg" alt="footer footer" /></th>
-                        <td>Es el pie de página</td>
-                        <td><input type="radio" id="footervi" name="tabla3"></td>
-                        <td><input type="radio" id="footerfi" name="tabla3"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla4.jpg" alt="<!---->" /></th>
-                        <td>Son las etiquetas para iniciar comentarios</td>
-                        <td><input type="radio" id="comentvi" name="tabla4"></td>
-                        <td><input type="radio" id="comentfi" name="tabla4"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-    </section>
-
-    <section class="preguntas" id="avanzado" name="prgnts">
-
-        <article id="preg1a">
-            <header>
-                <p>¿Cual es la estructura básica de HTML?</p>
-                <p>avanzado</p>
-            </header>
-            <ul>
-                <li><input type="radio" id="html1a" name="html" />
-                    <label for="html1a"><img src="img/html 4.jpg" alt="html head meta title head body h1 body html"/></label></li>
-                <li><input type="radio" id="html2a" name="html" alt="html head title h1 head html" />
-                    <label for="html2a"><img src="img/html 2.jpg"/></label></li>
-                <li><input type="radio" id="html3a" name="html" />
-                    <label for="html3a"><img src="img/html 1.jpg" alt="html head body title h1 body head html"/></label></li>
-            </ul>
-        </article>
-
-        <hr>
+            <hr>
 
 
-        <article id="preg2a">
-            <header>
-                <p>¿A que hace referencia la siguiente imágen?</p>
-                <img src="img/h1.jpg" alt="h1 titulo h1" />
-            </header>
-            <ul>
-                <li><input type="radio" id="atributoa" name="pregunta2" />
-                    <label for="atributoa">Atributo</label></li>
-                <li><input type="radio" id="etiquetaa" name="pregunta2" />
-                    <label for="etiquetaa">Etiqueta</label></li>
-                <li><input type="radio" id="elementoa" name="pregunta2" />
-                    <label for="elementoa">Elemento</label></li>
-            </ul>
-        </article>
+            <article id="preg2i">
+                <header>
+                    <p>¿A que hace referencia la siguiente imágen?</p>
+                    <img src="img/h1.jpg" alt="h1 titulo h1" />
+                </header>
+                <ul>
+                    <li><input type="radio" id="i2a" name="pregunta2" />
+                        <label for="i2a">Value</label></li>
+                    <li><input type="radio" id="i2b" name="pregunta2" />
+                        <label for="i2b">Etiqueta</label></li>
+                    <li><input type="radio" id="i2c" name="pregunta2" />
+                        <label for="i2c">Elemento</label></li>
+                </ul>
+            </article>
 
-        <hr>
-
-
-        <article id="preg3a">
-            <header>
-                <p>¿Que son las etiquetas?</p>
-            </header>
-            <ul>
-                <li><input type="radio" id="etiq1a" name="etiq" />
-                    <label for="etiq1a"><img src="img/etiqueta 1.jpg" alt="son codigos utilizados para 'marcar'"/></label></li>
-                <li><input type="radio" id="etiq2b" name="etiq" alt="html head title h1 head html" />
-                    <label for="etiq2a"><img src="img/etiqueta 3.jpg" alt="es un conjunto completo de etiquetas y contenidos"/></label></li>
-                <li><input type="radio" id="etiq3a" name="etiq" />
-                    <label for="etiq3a"><img src="img/etiqueta 2.jpg" alt="proporcionan informacion adicional a los elementos html"/></label></li>
-            </ul>
-        </article>
-
-        <hr>
+            <hr>
 
 
-        <article id="preg4a">
-            <header>
-                <p>¿A que hace referencia la siguiente imagen?</p>
-                <img src="img/src.jpg" alt="src='img/corazon.jpg'" />
-            </header>
-            <ul>
-                <li><input type="radio" id="etiqueta1a" name="pregunta3" />
-                    <label for="etiqueta1a">Etiqueta</label></li>
-                <li><input type="radio" id="elemento1a" name="pregunta3" />
-                    <label for="elemento1a">Elemento</label></li>
-                <li><input type="radio" id="atributo1a" name="pregunta3" />
-                    <label for="atributo1a">Atributo</label></li>
-            </ul>
-        </article>
+            <article id="preg3i">
+                <header>
+                    <p>¿Que son las etiquetas?</p>
+                </header>
+                <ul>
+                    <li><input type="radio" id="i3a" name="etiq" />
+                        <label for="i3a"><img src="img/etiqueta 3.jpg" alt="son codigos utilizados para 'marcar'"/></label></li>
+                    <li><input type="radio" id="i3b" name="etiq" alt="html head title h1 head html" />
+                        <label for="i3b"><img src="img/etiqueta 1.jpg" alt="es un conjunto completo de etiquetas y contenidos"/></label></li>
+                    <li><input type="radio" id="i3c" name="etiq" />
+                        <label for="i3c"><img src="img/etiqueta 4.jpg" alt="proporcionan informacion adicional a los elementos html"/></label></li>
+                </ul>
+            </article>
 
-        <hr>
+            <hr>
 
 
-        <article id="preg5a">
-            <header>
-                <p>Verdadero o Falso</p>
-            </header>
-            <table>
-                <caption>Responde a cada una de las siguientes lineas por V o F</caption>
-                <thead>
-                    <tr>
-                        <th>partes de HTML</th>
-                        <th>justificación</th>
-                        <th>V</th>
-                        <th>F</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th><img src="img/tabla1.jpg" alt="html html" /></th>
-                        <td>Es el encabezado de la página</td>
-                        <td><input type="radio" id="htmlva" name="tabla1"></td>
-                        <td><input type="radio" id="htmlfa" name="tabla1"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla2.jpg" alt="caption caption" /></th>
-                        <td>Es una etiqueta</td>
-                        <td><input type="radio" id="captionva" name="tabla2"></td>
-                        <td><input type="radio" id="captionfa" name="tabla2"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla3.jpg" alt="footer footer" /></th>
-                        <td>Es el pie de página</td>
-                        <td><input type="radio" id="footerva" name="tabla3"></td>
-                        <td><input type="radio" id="footerfa" name="tabla3"></td>
-                    </tr>
-                    <tr>
-                        <th><img src="img/tabla4.jpg" alt="<!---->" /></th>
-                        <td>Son las etiquetas para iniciar comentarios</td>
-                        <td><input type="radio" id="comentva" name="tabla4"></td>
-                        <td><input type="radio" id="comentfa" name="tabla4"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+            <article id="preg4i">
+                <header>
+                    <p>¿A que hace referencia la siguiente imagen?</p>
+                    <img src="img/src.jpg" alt="src='img/corazon.jpg'" />
+                </header>
+                <ul>
+                    <li><input type="radio" id="i4a" name="pregunta3" />
+                        <label for="i4a">Etiqueta</label></li>
+                    <li><input type="radio" id="i4b" name="pregunta3" />
+                        <label for="i4b">Element</label></li>
+                    <li><input type="radio" id="i4c" name="pregunta3" />
+                        <label for="i4c">Atributo</label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+
+            <article id="preg5i">
+                <header>
+                    <p>Verdadero o Falso</p>
+                </header>
+                <table>
+                    <caption>Responde a cada una de las siguientes lineas por V o F</caption>
+                    <thead>
+                        <tr>
+                            <th>partes de HTML</th>
+                            <th>justificación</th>
+                            <th>V</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><img src="img/tabla1.jpg" alt="html html" /></th>
+                            <td>Es el encabezado de la página</td>
+                            <td><input type="radio" id="i5av" name="tabla1"></td>
+                            <td><input type="radio" id="i5af" name="tabla1"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla2.jpg" alt="caption caption" /></th>
+                            <td>Es una etiqueta</td>
+                            <td><input type="radio" id="i5bv" name="tabla2"></td>
+                            <td><input type="radio" id="i5bf" name="tabla2"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla3.jpg" alt="footer footer" /></th>
+                            <td>Es el pie de página</td>
+                            <td><input type="radio" id="i5cv" name="tabla3"></td>
+                            <td><input type="radio" id="i5cf" name="tabla3"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla4.jpg" alt="<!---->" /></th>
+                            <td>Son las etiquetas para iniciar comentarios</td>
+                            <td><input type="radio" id="i5dv" name="tabla4"></td>
+                            <td><input type="radio" id="i5df" name="tabla4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section class="preguntas" id="avanzado" name="prgnts">
+
+            <article id="preg1a">
+                <header>
+                    <p>¿Cual es la estructura básica de HTML?</p>
+                </header>
+                <ul>
+                    <li><input type="radio" id="a1a" name="html" />
+                        <label for="a1a"><img src="img/html 4.jpg" alt="html head meta title head body h1 body html"/></label></li>
+                    <li><input type="radio" id="a1b" name="html" alt="html head title h1 head html" />
+                        <label for="a1b"><img src="img/html 2.jpg"/></label></li>
+                    <li><input type="radio" id="a1c" name="html" />
+                        <label for="a1c"><img src="img/html 1.jpg" alt="html head body title h1 body head html"/></label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+
+            <article id="preg2a">
+                <header>
+                    <p>¿A que hace referencia la siguiente imágen?</p>
+                    <img src="img/h1.jpg" alt="h1 titulo h1" />
+                </header>
+                <ul>
+                    <li><input type="radio" id="a2a" name="pregunta2" />
+                        <label for="a2a">Atributo</label></li>
+                    <li><input type="radio" id="a2b" name="pregunta2" />
+                        <label for="a2b">Etiqueta</label></li>
+                    <li><input type="radio" id="a2c" name="pregunta2" />
+                        <label for="a2c">Elemento</label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+
+            <article id="preg3a">
+                <header>
+                    <p>¿Que son las etiquetas?</p>
+                </header>
+                <ul>
+                    <li><input type="radio" id="a3a" name="etiq" />
+                        <label for="a3a"><img src="img/etiqueta 1.jpg" alt="son codigos utilizados para 'marcar'"/></label></li>
+                    <li><input type="radio" id="a3b" name="etiq" alt="html head title h1 head html" />
+                        <label for="a3b"><img src="img/etiqueta 3.jpg" alt="es un conjunto completo de etiquetas y contenidos"/></label></li>
+                    <li><input type="radio" id="a3c" name="etiq" />
+                        <label for="a3c"><img src="img/etiqueta 2.jpg" alt="proporcionan informacion adicional a los elementos html"/></label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+
+            <article id="preg4a">
+                <header>
+                    <p>¿A que hace referencia la siguiente imagen?</p>
+                    <img src="img/src.jpg" alt="src='img/corazon.jpg'" />
+                </header>
+                <ul>
+                    <li><input type="radio" id="a4a" name="pregunta3" />
+                        <label for="a4a">Etiqueta</label></li>
+                    <li><input type="radio" id="a4b" name="pregunta3" />
+                        <label for="a4b">Elemento</label></li>
+                    <li><input type="radio" id="a4c" name="pregunta3" />
+                        <label for="a4c">Atributo</label></li>
+                </ul>
+            </article>
+
+            <hr>
+
+
+            <article id="preg5a">
+                <header>
+                    <p>Verdadero o Falso</p>
+                </header>
+                <table>
+                    <caption>Responde a cada una de las siguientes lineas por V o F</caption>
+                    <thead>
+                        <tr>
+                            <th>partes de HTML</th>
+                            <th>justificación</th>
+                            <th>V</th>
+                            <th>F</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><img src="img/tabla1.jpg" alt="html html" /></th>
+                            <td>Es el encabezado de la página</td>
+                            <td><input type="radio" id="a5av" name="tabla1"></td>
+                            <td><input type="radio" id="a5af" name="tabla1"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla2.jpg" alt="caption caption" /></th>
+                            <td>Es una etiqueta</td>
+                            <td><input type="radio" id="a5bv" name="tabla2"></td>
+                            <td><input type="radio" id="a5bf" name="tabla2"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla3.jpg" alt="footer footer" /></th>
+                            <td>Es el pie de página</td>
+                            <td><input type="radio" id="a5cv" name="tabla3"></td>
+                            <td><input type="radio" id="a5cf" name="tabla3"></td>
+                        </tr>
+                        <tr>
+                            <th><img src="img/tabla4.jpg" alt="<!---->" /></th>
+                            <td>Son las etiquetas para iniciar comentarios</td>
+                            <td><input type="radio" id="a5dv" name="tabla4"></td>
+                            <td><input type="radio" id="a5df" name="tabla4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
     </section>
 
     <hr>
 
+    <section id="enviaPuntaje">
+        <header>
+            <h2>Enviar puntaje</h2>
+        </header>
+        <input id="nomb" type="text" name="nombre" minlenght="3" maxlength="3" placeholder="Nombre" required/>
+        <br>
+        <input type="text" name="puntaje" value="puntaje" readonly />
+        <br>
+        <input type="submit" value="Enviar" onclick="enviar()" />
+    </section>
+
     <section id="tablaDePuntos">
-        <table>
+        <table id="tablaDeP">
             <thead>
                 <caption>Tabla de puntos</caption>
                 <tr>
@@ -431,17 +436,6 @@
     </section>
 
     <hr>
-
-    <section id="enviaPuntaje">
-        <header>
-            <h2>Enviar puntaje</h2>
-        </header>
-        <input type="text" name="nombre" minlenght="3" maxlength="3" placeholder="Nombre" required/>
-        <br>
-        <input type="text" name="puntaje" value="puntaje" readonly />
-        <br>
-        <input type="submit" value="Enviar" />
-    </section>
 
     <footer id="piePagina">
         <p>Esta página fue creada con fines evaluatorios, para la materia "Programación Web 1"</p>

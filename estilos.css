@@ -16,6 +16,8 @@ nav {
     display: flex;
     background-color: #F19DF4;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 ul,
